@@ -1,0 +1,10 @@
+extends ./layout/default.pug
+
+block title
+  .jumbotron
+    h1 회원로그인
+block content
+  .h-75.my-3.p-3.border.rounded.d-flex.junstify-content-center.align-items-center
+    form(action="/users/login" method="post" )
+      .py-2(style="width=300px;")
+        input.form-control(type='text')
